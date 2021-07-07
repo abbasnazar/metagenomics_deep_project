@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='DeepARG',
+    name=' metagenomics_deep_project',
     version='1.0.2',
     packages=find_packages(
         exclude=(".git", "data")
@@ -25,7 +25,7 @@ setup(
     python_requires=">=3.6.15,!=3.*",
     entry_points='''
         [console_scripts]
-        deeparg=deeparg.entry:main
+        metagenomics_deep_project= metagenomics_deep_project.entry:main
     ''',
 )
 
