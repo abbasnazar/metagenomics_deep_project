@@ -22,7 +22,7 @@ setup(
         'requests==2.18.4',
         'wget'
     ],
-    python_requires=">=2.7.15,!=3.*",
+    python_requires=">=3.6.15,!=3.*",
     entry_points='''
         [console_scripts]
         deeparg=deeparg.entry:main
