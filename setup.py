@@ -2,29 +2,24 @@ from setuptools import setup, find_packages
 
 setup(
     name='DeepArg',
-    version='1.0.2',
+    version='2.0',
     packages=find_packages(
         exclude=(".git", "data")
     ),
     include_package_data=True,
     package_data={},
     install_requires=[
-        'numpy==1.10.4',
-        'scipy==0.16.1',
-        'joblib==0.13.0',
-        'BioPython==1.73',
+        BioPython',
         'ete3',
+        'h5py',
         'tqdm',
-        'nolearn==0.6',
-        'lasagne==0.1',
-        'scikit-learn==0.17',
-        'theano==0.8.2',
-        'requests==2.18.4',
-        'wget'
+        'pandas',
+        'networkx'
     ],
     python_requires=">=3.0",
     entry_points='''
+        entry_points='''
         [console_scripts]
-        deeparg=deeparg.entry:main
+        deeparg=GeneTools.entry:cli
     ''',
 )
